@@ -4,17 +4,15 @@
 <base href="/lp/yoomart/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Start Your Own Quick-Commerce Business | YooMart by Yoorie</title>
-<meta name="description" content="From ₹29,999 + GST. Launch your own Blinkit/Zepto-style grocery delivery business under your brand. Yoorie sets up your customer app, store app, delivery app, admin panel and website — done for you.">
-<link rel="canonical" href="https://yoorie.com/yoomart/">
-<meta property="og:title" content="Start Your Own Quick-Commerce Business">
-<meta property="og:description" content="Your brand. Your apps on Play Store &amp; App Store. We set up everything.">
-<meta property="og:image" content="https://yoorie.com/yoomart/assets/img/storefront-home-desktop-light.webp">
+<title>Your own Blinkit-style app, done for you · YooMart by Yoorie</title>
+<meta name="description" content="From ₹29,999 + GST. We launch your own quick-commerce business: customer app, store app, rider app, admin panel and web store under your brand. Live in weeks.">
 <meta name="theme-color" content="#6C3BEA">
 <link rel="icon" href="assets/img/favicon-32.png"><link rel="apple-touch-icon" href="assets/img/favicon-180.png">
-<link rel="preload" as="image" href="assets/img/customer-06-home.webp">
+<link rel="preload" href="assets/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:title" content="Your own Blinkit-style app. Your brand. Live in weeks.">
+<meta property="og:description" content="Done-for-you quick-commerce launch for Indian retailers. From ₹29,999 + GST.">
+<meta property="og:image" content="assets/img/storefront-home-desktop-light.webp">
 <script>try{var t=localStorage.getItem('ym-theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark'}catch(e){}</script>
-
 <!-- ===== Meta Pixel (fill PIXEL_ID, then uncomment) =====
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -31,261 +29,382 @@ gtag('config',''); // GA4 measurement ID, e.g. G-XXXXXXX
 gtag('config',''); // Google Ads ID, e.g. AW-XXXXXXX
 </script>
 ===== end Google tag ===== -->
-
 <style>
-:root{--p:#6C3BEA;--p2:#8B5CF6;--pd:#4C1FC4;--bg:#fff;--bg2:#F7F5FF;--card:#fff;--tx:#14101F;--mu:#5B5670;--ln:#E7E3F3;--ok:#16A34A;--sh:0 10px 40px -12px rgba(76,31,196,.25);--r:18px}
-[data-theme=dark]{--bg:#0D0A16;--bg2:#15111F;--card:#1B1628;--tx:#F3F0FA;--mu:#A49DB8;--ln:#2C2540;--sh:0 10px 40px -12px rgba(0,0,0,.6)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;background:var(--bg);color:var(--tx);padding-bottom:76px}
-img{max-width:100%;display:block}a{color:var(--p)}
-h1,h2,h3{line-height:1.15;letter-spacing:-.02em;margin:0 0 .5em}h2{font-size:clamp(1.6rem,4vw,2.4rem)}h3{font-size:1.1rem}
-.w{max-width:1160px;margin:0 auto;padding:0 20px}section{padding:72px 0}.alt{background:var(--bg2)}
-.eb{display:inline-block;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--p);background:color-mix(in srgb,var(--p) 12%,transparent);padding:5px 12px;border-radius:99px;margin-bottom:14px}
-.lead{color:var(--mu);font-size:1.08rem;max-width:680px}.c{text-align:center}.c .lead{margin:0 auto}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:14px 22px;font-family:inherit;font-weight:600;font-size:1rem;line-height:1.2;cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-1px)}.bp{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 8px 24px -8px var(--p)}.bo{background:transparent;color:var(--tx);border:1.5px solid var(--ln)}
+@font-face{font-family:Sora;src:url(assets/fonts/sora.woff2) format("woff2");font-weight:100 800;font-display:swap}
+@font-face{font-family:Inter;src:url(assets/fonts/inter.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--p:#6C3BEA;--p2:#5326d6;--pl:#efe9ff;--lime:#C6F432;--ink:#0f0b1e;--tx:#2b2640;--mu:#6b6780;--bg:#fbfaf7;--bg2:#f3f0ea;--card:#fff;--ln:rgba(15,11,30,.1);--sh:0 30px 60px -30px rgba(40,20,90,.35);--r:22px}
+[data-theme=dark]{--ink:#f5f3ff;--tx:#d9d5ea;--mu:#9c97b3;--bg:#0c0a14;--bg2:#13101e;--card:#181425;--ln:rgba(255,255,255,.09);--pl:#221a3d;--sh:0 30px 60px -30px rgba(0,0,0,.8)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:16px/1.6 Inter,system-ui,sans-serif;color:var(--tx);background:var(--bg);overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3,.d{font-family:Sora,Inter,sans-serif;color:var(--ink);letter-spacing:-.03em;line-height:1.02}
+h2{font-size:clamp(2rem,5.2vw,4rem);font-weight:700}
+h3{font-size:1.25rem;font-weight:650;letter-spacing:-.02em;line-height:1.2}
+.w{max-width:1240px;margin:0 auto;padding:0 22px}
+.k{display:inline-flex;align-items:center;gap:8px;font:600 .75rem/1 Sora,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--p)}
+[data-theme=dark] .k{color:#b9a3ff}
+.k:before{content:"";width:22px;height:2px;background:currentColor}
+.sec{padding:110px 0;position:relative}
+.sh{max-width:780px;margin-bottom:56px}.sh p{font-size:1.12rem;color:var(--mu);margin-top:18px;max-width:620px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:15px 26px;font:600 1rem/1 Sora,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.bp{background:var(--p);color:#fff;box-shadow:0 12px 30px -10px rgba(108,59,234,.7)}.bp:hover{transform:translateY(-2px)}
+.bl{background:var(--lime);color:#14110a}.bo{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ln)}
+.mark{background:linear-gradient(transparent 62%,var(--lime) 62% 92%,transparent 92%);padding:0 .08em}
+[data-theme=dark] .mark{background:none;color:var(--lime)}
 /* header */
-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
-.hd{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}.hd img{height:34px;width:auto}
-.hd nav{display:flex;gap:10px;align-items:center}.hd nav a.l{color:var(--mu);text-decoration:none;font-weight:500;font-size:.95rem}
-.tg{width:40px;height:40px;border-radius:10px;border:1px solid var(--ln);background:var(--card);color:var(--tx);cursor:pointer;font-size:18px}
-.lw{display:none}[data-theme=dark] .lw{display:block}[data-theme=dark] .lb{display:none}
+header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.6) blur(14px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--ln)}
+.hd{display:flex;align-items:center;gap:22px;height:68px}.hd .lg{height:30px;width:auto}
+.hd nav{margin-left:auto;display:flex;gap:26px;font:500 .92rem Sora,sans-serif}.hd nav a{text-decoration:none;color:var(--tx)}
+.tg{width:40px;height:40px;border-radius:50%;border:1px solid var(--ln);background:var(--card);color:var(--ink);cursor:pointer;font-size:17px}
+.lg-d{display:none}[data-theme=dark] .lg-d{display:block}[data-theme=dark] .lg-l{display:none}
 /* hero */
-.hero{padding:48px 0 64px;background:radial-gradient(1000px 500px at 85% -10%,color-mix(in srgb,var(--p) 22%,transparent),transparent),radial-gradient(700px 400px at -10% 20%,color-mix(in srgb,var(--p2) 14%,transparent),transparent)}
-.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
-.hero h1{font-size:clamp(2.1rem,5.4vw,3.6rem);font-weight:800}.hero h1 span{background:linear-gradient(135deg,var(--p),#C026D3);-webkit-background-clip:text;background-clip:text;color:transparent}
-.ticks{list-style:none;padding:0;margin:22px 0;display:grid;gap:10px}.ticks li{display:flex;gap:10px;align-items:flex-start}.ticks li>span{flex:1}.ticks li:before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;background:var(--p);color:#fff;font-size:13px;display:grid;place-items:center;margin-top:2px}
-.phones{display:flex;gap:14px;margin-top:26px}.phones img{width:31%;border-radius:20px;box-shadow:var(--sh);border:5px solid #111}.phones img:nth-child(2){transform:translateY(-14px)}
+.hero{position:relative;padding:64px 0 90px;overflow:hidden;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(var(--ln) 1px,transparent 1px),linear-gradient(90deg,var(--ln) 1px,transparent 1px);background-size:56px 56px;-webkit-mask:radial-gradient(ellipse 80% 70% at 70% 30%,#000 30%,transparent 75%);mask:radial-gradient(ellipse 80% 70% at 70% 30%,#000 30%,transparent 75%)}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.35;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.blob{position:absolute;z-index:-1;width:720px;height:720px;right:-160px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(108,59,234,.28),transparent 65%);filter:blur(10px)}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.6rem);font-weight:750;margin:22px 0 24px}
+.hero h1 em{font-style:normal;color:var(--p)}[data-theme=dark] .hero h1 em{color:#a98bff}
+.lead{font-size:1.2rem;max-width:560px;color:var(--mu)}.lead b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;background:var(--card);border:1px solid var(--ln);font:500 .88rem Sora,sans-serif;color:var(--ink)}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 3px rgba(198,244,50,.25)}
+.price{display:flex;align-items:baseline;gap:12px;margin-top:30px;flex-wrap:wrap}
+.price b{font:750 2.2rem/1 Sora,sans-serif;color:var(--ink);letter-spacing:-.03em}.price span{color:var(--mu);font-size:.95rem}
+/* stage */
+.stage{position:relative;height:620px;margin-top:10px}
+.ph{position:absolute;width:236px;aspect-ratio:418/872;border-radius:38px;padding:9px;background:#0b0913;box-shadow:0 0 0 1.5px #2b2540 inset,var(--sh),0 50px 80px -40px rgba(60,20,160,.55)}
+.ph:before{content:"";position:absolute;top:16px;left:50%;transform:translateX(-50%);width:70px;height:20px;border-radius:20px;background:#0b0913;z-index:2}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:30px;background:#fff}
+.stage .p1{left:2%;top:70px;transform:rotate(-7deg);z-index:2}
+.stage .p2{left:34%;top:0;z-index:3;width:252px}
+.stage .p3{left:66%;top:90px;transform:rotate(6deg);z-index:1}
+.fc{position:absolute;z-index:5;background:var(--card);color:var(--ink);border:1px solid var(--ln);border-radius:18px;padding:14px 16px;box-shadow:var(--sh);font:500 .85rem/1.35 Inter,sans-serif;animation:fl 6s ease-in-out infinite}
+.fc b{font-family:Sora,sans-serif;display:block;font-size:.95rem}.fc small{color:var(--mu)}
+.f1{left:-4%;top:12px;display:flex;gap:12px;align-items:center}
+.f1 .ic{width:40px;height:40px;border-radius:12px;background:var(--pl);display:grid;place-items:center;font-size:20px}
+.f2{right:4%;top:-6px;background:var(--lime);color:#14110a;border:0;font:700 1.9rem/1 Sora,sans-serif;padding:16px 20px;border-radius:20px;transform:rotate(5deg);animation-delay:-2s}
+.f2 small{display:block;font:600 .7rem Sora;letter-spacing:.12em;text-transform:uppercase;color:#14110a;opacity:.7}
+.f3{left:22%;bottom:22px;width:260px;animation-delay:-4s}
+.trk{height:6px;border-radius:6px;background:var(--bg2);margin:10px 0 6px;overflow:hidden}.trk i{display:block;height:100%;width:68%;background:linear-gradient(90deg,var(--p),#a98bff);border-radius:6px}
+.f4{right:-2%;bottom:120px;animation-delay:-1s}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:6px}
+@keyframes fl{50%{translate:0 -10px}}
 /* form */
-.fc{background:var(--card);border:1px solid var(--ln);border-radius:22px;padding:26px;box-shadow:var(--sh);position:relative}
-.fc h2{font-size:1.4rem}.fc p.s{color:var(--mu);margin:-4px 0 16px;font-size:.95rem}
-.f{display:grid;gap:12px}.f .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-label{font-size:.85rem;font-weight:600;display:grid;gap:5px}
-input,select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border-radius:11px;border:1.5px solid var(--ln);background:var(--bg);color:var(--tx)}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 3px color-mix(in srgb,var(--p) 20%,transparent)}
-textarea{min-height:76px;resize:vertical}.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.f .btn{width:100%;padding:16px}.fine{font-size:.78rem;color:var(--mu);text-align:center;margin:4px 0 0}.err{color:#DC2626;font-size:.9rem;display:none}
-.ty{display:none;text-align:center;padding:24px 4px}.ty .big{width:64px;height:64px;border-radius:50%;background:var(--ok);color:#fff;font-size:32px;display:grid;place-items:center;margin:0 auto 14px}
-.sent .f{display:none}.sent .ty{display:block}.sent>h2,.sent>p.s{display:none}
-/* grids */
-.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.cd{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:24px}.cd p{color:var(--mu);margin:0}
-.ic{width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--p) 12%,transparent);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
-.ps{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}.ps .cd h3{display:flex;gap:10px;align-items:center}
-.ps ul{margin:10px 0 0;padding-left:20px;color:var(--mu)}.ps .yes{border-color:var(--p);background:linear-gradient(180deg,color-mix(in srgb,var(--p) 8%,var(--card)),var(--card))}
-.get{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:36px}.get .cd{text-align:center;padding:22px 16px}.get img.i{width:52px;height:52px;margin:0 auto 12px}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
-.steps .cd{position:relative;padding-top:58px}.steps .cd:before{counter-increment:s;content:counter(s);position:absolute;top:18px;left:24px;width:30px;height:30px;border-radius:50%;background:var(--p);color:#fff;font-weight:700;display:grid;place-items:center}
-.gal{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 2px 18px;margin-top:30px}
-.gal figure{margin:0;flex:none;scroll-snap-align:start;text-align:center}.gal figure img{height:440px;width:auto;border-radius:22px;border:5px solid #111;box-shadow:var(--sh)}
-.gal figcaption{font-size:.85rem;color:var(--mu);margin-top:8px}
-.wide{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:10px}.wide img{border-radius:14px;border:1px solid var(--ln);box-shadow:var(--sh)}
-.dm{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
-.ft{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.ft div{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:16px}.ft b{display:block}.ft span{color:var(--mu);font-size:.92rem}
-.pk{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;align-items:stretch}.pk .cd{display:flex;flex-direction:column}.pk ul{list-style:none;padding:0;margin:16px 0 22px;display:grid;gap:9px;flex:1}.pk li:before{content:"✓ ";color:var(--p);font-weight:700}
-.pk .hot{border:2px solid var(--p);position:relative}.pk .hot:after{content:"Most chosen";position:absolute;top:-12px;right:18px;background:var(--p);color:#fff;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:99px}
-.pk .q{font-size:1.5rem;font-weight:800;margin:6px 0 0}.pk .q small{display:block;font-size:.85rem;font-weight:500;color:var(--mu)}
-.faq{max-width:820px;margin:30px auto 0}.faq details{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:4px 20px;margin-bottom:10px}
-.faq summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq summary:after{content:"+";color:var(--p);font-size:1.3rem}.faq details[open] summary:after{content:"–"}
-.faq p{color:var(--mu);margin:0 0 16px}
-.cta{background:linear-gradient(135deg,var(--pd),var(--p) 55%,#A855F7);color:#fff;border-radius:28px;padding:56px 28px;text-align:center}.cta .lead{color:#EDE6FF;margin:0 auto 26px}.cta .btn{background:#fff;color:var(--pd)}.cta .bo{background:transparent;color:#fff;border-color:#ffffff66}
-footer{padding:36px 0 30px;color:var(--mu);font-size:.9rem;border-top:1px solid var(--ln)}footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.form{position:relative;background:var(--card);border:1px solid var(--ln);border-radius:28px;padding:28px;box-shadow:var(--sh)}
+.form h3{font-size:1.5rem}.form>p{color:var(--mu);font-size:.95rem;margin:6px 0 18px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fg .s2{grid-column:1/-1}
+label{display:block;font:600 .8rem Sora,sans-serif;color:var(--ink)}
+input,select,textarea{width:100%;margin-top:6px;font:inherit;font-weight:400;font-family:Inter,sans-serif;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--ln);border-radius:14px;padding:13px 14px;outline:0}
+input:focus,select:focus,textarea:focus{border-color:var(--p);box-shadow:0 0 0 4px rgba(108,59,234,.15)}
+textarea{min-height:76px;resize:vertical}
+.form .btn{width:100%;margin-top:16px;padding:17px}
+.fine{font-size:.8rem;color:var(--mu);text-align:center;margin-top:10px}
+.hp{position:absolute;left:-9999px}
+#er{display:none;margin-top:12px;padding:11px 14px;border-radius:12px;background:#fde8e8;color:#9b1c1c;font-size:.9rem}
+.ty{display:none;text-align:center;padding:30px 8px}.ty .tk{width:72px;height:72px;border-radius:50%;background:var(--lime);display:grid;place-items:center;margin:0 auto 18px;font-size:34px;color:#14110a}
+.sent .ty{display:block}.sent form,.sent>h3,.sent>p{display:none}
+.hstrip{position:absolute;top:-14px;left:24px;background:var(--ink);color:var(--bg);font:600 .72rem/1 Sora;letter-spacing:.1em;text-transform:uppercase;padding:8px 12px;border-radius:999px}
+/* marquee */
+.mq{border-block:1px solid var(--ln);background:var(--ink);color:var(--bg);overflow:hidden;padding:18px 0}
+.mq div{display:flex;gap:46px;width:max-content;animation:mq 40s linear infinite;font:600 1.15rem Sora,sans-serif;white-space:nowrap}
+.mq span:nth-child(even){color:var(--lime)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* problem */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vc{border-radius:var(--r);padding:34px;border:1px solid var(--ln);background:var(--card)}
+.vc.y{background:var(--p);color:#e9e1ff;border:0;position:relative;overflow:hidden}.vc.y h3,.vc.y .big{color:#fff}
+.vc .big{font:750 clamp(2rem,4vw,3.2rem)/1 Sora,sans-serif;letter-spacing:-.04em;color:var(--ink);margin:14px 0 6px}
+.vc ul{list-style:none;padding:0;margin-top:22px;display:grid;gap:12px}
+.vc li{display:flex;gap:12px;padding-top:12px;border-top:1px solid var(--ln)}.vc.y li{border-color:rgba(255,255,255,.18)}
+.vc li:before{content:"✕";font-weight:700;color:#e5484d}.vc.y li:before{content:"✓";color:var(--lime)}
+.tag{display:inline-block;font:600 .72rem Sora;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:var(--bg2);color:var(--mu)}
+.vc.y .tag{background:var(--lime);color:#14110a}
+.vfine{font-size:.85rem;color:var(--mu);margin-top:16px}
+/* apps */
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.app{border-radius:28px;background:var(--bg2);border:1px solid var(--ln);padding:30px 28px 0;overflow:hidden;display:flex;flex-direction:column}
+.app .n{font:600 .75rem Sora;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.app h3{font-size:1.6rem;margin:8px 0 10px}.app p{color:var(--mu);font-size:.97rem}
+.app ul{list-style:none;padding:0;margin:18px 0 26px;display:flex;flex-wrap:wrap;gap:8px}
+.app li{font-size:.8rem;padding:6px 11px;border-radius:999px;background:var(--card);border:1px solid var(--ln);color:var(--ink)}
+.app .ph{position:relative;margin:auto auto -110px;width:230px}
+.app:nth-child(2){background:var(--p);color:#e9e1ff}.app:nth-child(2) h3{color:#fff}.app:nth-child(2) p,.app:nth-child(2) .n{color:#d6c9ff}.app:nth-child(2) li{background:rgba(255,255,255,.12);color:#fff;border-color:transparent}
+/* web */
+.web{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.bw{border-radius:16px;overflow:hidden;background:var(--card);border:1px solid var(--ln);box-shadow:var(--sh)}
+.bw .bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--ln);background:var(--bg2)}
+.bw .bar i{width:10px;height:10px;border-radius:50%;background:#ff5f57}.bw .bar i:nth-child(2){background:#febc2e}.bw .bar i:nth-child(3){background:#28c840}
+.bw .bar span{margin-left:12px;flex:1;font-size:.75rem;color:var(--mu);background:var(--card);border-radius:7px;padding:4px 10px;max-width:320px}
+.bw .sc{aspect-ratio:1440/900;overflow:hidden}.bw .sc img{width:100%;height:100%;object-fit:cover;object-position:top}
+.wcap{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;font:600 .95rem Sora;color:var(--ink)}.wcap small{font:400 .85rem Inter;color:var(--mu)}
+/* timeline */
+.tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s}
+.tl:before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:repeating-linear-gradient(90deg,var(--p) 0 10px,transparent 10px 18px)}
+.st{position:relative;padding:0 24px 0 0}
+.st .nb{width:56px;height:56px;border-radius:50%;background:var(--bg);border:2px solid var(--p);display:grid;place-items:center;font:700 1.1rem Sora;color:var(--p);position:relative}
+.st:last-child .nb{background:var(--lime);border-color:var(--lime);color:#14110a}
+.st .wk{font:600 .75rem Sora;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);margin:22px 0 6px}
+.st h3{font-size:1.45rem;margin-bottom:10px}.st p{color:var(--mu);font-size:.96rem}
+.st ul{list-style:none;padding:0;margin-top:14px;display:grid;gap:6px;font-size:.9rem}.st li:before{content:"→ ";color:var(--p);font-weight:700}
+.tlnote{margin-top:40px;font-size:.9rem;color:var(--mu)}
+/* launch day */
+.ld{background:var(--ink);color:#cfc9e6;border-radius:36px;padding:70px 56px;position:relative;overflow:hidden}
+[data-theme=dark] .ld{background:#1b1630}
+.ld h2{color:#fff}.ld .k{color:var(--lime)}.ld .sh p{color:#a9a3c2}
+.ld:after{content:"";position:absolute;right:-200px;bottom:-260px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(108,59,234,.55),transparent 65%)}
+.clock{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative;z-index:1}
+.ck{border-top:1px solid rgba(255,255,255,.18);padding-top:18px}
+.ck .t{font:700 1.5rem Sora;color:var(--lime);letter-spacing:-.02em}
+.ck h3{color:#fff;font-size:1.05rem;margin:10px 0 6px}.ck p{font-size:.9rem;color:#a9a3c2}
+/* gallery */
+.gal{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 22px 30px;margin:0 -22px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.gal figure{flex:0 0 auto;scroll-snap-align:center;text-align:center}
+.gal .ph{position:relative;width:220px}
+.gal figcaption{margin-top:16px;font:600 .9rem Sora;color:var(--ink)}.gal figcaption small{display:block;font:400 .8rem Inter;color:var(--mu)}
+.galh{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.demo{display:flex;gap:12px;flex-wrap:wrap}
+/* features */
+.ft{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ln);border-left:1px solid var(--ln)}
+.ft div{padding:26px 24px;border-right:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.ft b{font:650 1.02rem Sora;color:var(--ink);display:block;margin-bottom:6px;letter-spacing:-.01em}.ft span{font-size:.9rem;color:var(--mu)}
+.ft div:hover{background:var(--pl)}
+/* pricing */
+.pr{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.pc{border-radius:30px;padding:34px 30px;background:var(--card);border:1px solid var(--ln);display:flex;flex-direction:column;position:relative}
+.pc .nm{font:600 .8rem Sora;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.pc .am{font:750 3rem/1 Sora;letter-spacing:-.04em;color:var(--ink);margin:16px 0 4px}.pc .am sup{font-size:1.3rem;vertical-align:.9em;margin-right:2px}
+.pc .gst{font-size:.85rem;color:var(--mu)}.pc .for{margin:16px 0 18px;font-size:.98rem;color:var(--tx);min-height:3em}
+.pc ul{list-style:none;padding:18px 0 0;border-top:1px dashed var(--ln);display:grid;gap:11px;font-size:.94rem;margin-bottom:28px;flex:1}
+.pc li{display:flex;gap:10px}.pc li:before{content:"";flex:0 0 18px;height:18px;margin-top:3px;border-radius:50%;background:var(--pl) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%236C3BEA' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E") center/12px no-repeat}
+.pc.hot{background:linear-gradient(160deg,#7b4cf5,#4b1fc9);color:#e9e1ff;border:0;transform:translateY(-14px);box-shadow:0 40px 80px -30px rgba(108,59,234,.75)}
+.pc.hot .am,.pc.hot .for{color:#fff}.pc.hot .nm,.pc.hot .gst{color:#d6c9ff}.pc.hot ul{border-color:rgba(255,255,255,.25)}
+.pc.hot li:before{background-color:var(--lime);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%2314110a' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E")}
+.pc .rib{position:absolute;top:22px;right:22px;background:var(--lime);color:#14110a;font:700 .7rem Sora;letter-spacing:.1em;text-transform:uppercase;padding:7px 11px;border-radius:999px}
+.pc .btn{width:100%}
+.mt{margin-top:22px;display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+.mt>div{border-radius:24px;padding:26px 28px;border:1px solid var(--ln);background:var(--bg2)}
+.mt h3{margin-bottom:6px}.mt p,.mt li{font-size:.92rem;color:var(--mu)}.mt ul{padding-left:18px;margin-top:8px}
+.mt .am2{font:700 1.6rem Sora;color:var(--ink);margin:6px 0}
+/* faq */
+.fq{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+details{border-bottom:1px solid var(--ln);padding:22px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font:600 1.1rem/1.35 Sora;color:var(--ink);letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}summary:after{content:"+";font-size:1.5rem;line-height:1;color:var(--p);transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}details p{margin-top:12px;color:var(--mu)}
+/* cta */
+.cta{border-radius:40px;background:var(--p);color:#e9e1ff;padding:80px 56px;position:relative;overflow:hidden;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+.cta h2{color:#fff;font-size:clamp(2.2rem,5vw,4.4rem)}.cta h2 span{color:var(--lime)}
+.cta:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:44px 44px;-webkit-mask:linear-gradient(90deg,transparent,#000);mask:linear-gradient(90deg,transparent,#000)}
+.cta>*{position:relative}.cta .acts{display:grid;gap:12px}
+.cta .bo{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4)}
+footer{padding:60px 0 120px;font-size:.9rem;color:var(--mu)}.fo{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 /* sticky */
-.stk{position:fixed;z-index:30;right:18px;bottom:18px;display:flex;flex-direction:column;gap:12px}
-.stk a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px -6px rgba(0,0,0,.35);color:#fff}
-.stk .wa{background:#25D366}.stk .cl{background:var(--p)}.stk svg{width:28px;height:28px;fill:#fff}
-.mb{display:none}
-@media (max-width:960px){.hg,.ps,.wide{grid-template-columns:1fr}.g4,.steps,.ft,.pk{grid-template-columns:1fr 1fr}.get{grid-template-columns:repeat(2,1fr)}.hd nav a.l{display:none}}
-@media (max-width:640px){section{padding:52px 0}.hero{padding:24px 0 44px}.g3,.g4,.steps,.ft,.pk{grid-template-columns:1fr}.f .two{grid-template-columns:1fr}.fc{padding:20px}
- .hero .phones{display:none}.hc{display:none!important}.hg>div:first-child{display:contents}.hg{gap:18px}.hg h1,.hg .eb{order:1}.hg .eb{margin-bottom:0;justify-self:start}.hg h1{margin:0}.fc{order:2}.hg .lead,.hg .ticks{order:3}.hg .ticks{margin-top:0}.hero .lead{font-size:1rem}.gal figure img{height:380px}
- .stk{display:none}.mb{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--ln)}
- .mb a{display:flex;align-items:center;justify-content:center;gap:6px;border-radius:11px;padding:12px 6px;font-weight:700;font-size:.92rem;text-decoration:none;color:#fff}.mb .wa{background:#25D366}.mb .cl{background:var(--tx);color:var(--bg)}.mb .q{background:var(--p)}.mb svg{width:18px;height:18px;fill:currentColor}}
-@media (min-width:641px){body{padding-bottom:0}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;display:grid;gap:12px}
+.fab a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.4)}
+.fab .wa{background:#25D366}.fab .cl{background:var(--ink)}[data-theme=dark] .fab .cl{background:var(--p)}
+.mbar{display:none}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.fc,.mq div{animation:none}}
+/* responsive */
+@media (max-width:1080px){.hg{grid-template-columns:1fr}.stage{max-width:640px;margin:20px auto 0}.apps{grid-template-columns:1fr 1fr}.ft{grid-template-columns:1fr 1fr}.clock{grid-template-columns:repeat(3,1fr)}.pr{grid-template-columns:1fr}.pc.hot{transform:none}.cta{grid-template-columns:1fr}}
+@media (max-width:760px){
+ .hd nav{display:none}.hd .tg{margin-left:auto}.hd .hc{display:none}
+ .sec{padding:76px 0}.sh{margin-bottom:36px}
+ .hero{padding:22px 0 60px}.hero h1{font-size:2.35rem;margin:14px 0 14px}
+ .hg{display:flex;flex-direction:column;gap:0}.hg>.hl{display:contents}
+ .hl .k{order:1}.hl h1{order:2}.form{order:3;padding:22px 18px;border-radius:24px;margin-top:6px}.hl .lead{order:4;margin-top:34px}.hl .chips{order:5}.hl .price{order:6}.stage{order:7}
+ .hero .lead{font-size:1.05rem}.hl .k{font-size:.68rem}
+ .form>p{margin-bottom:14px}.fg{gap:10px}input,select{padding:12px 13px}
+ .stage{height:440px;width:100%;margin-top:30px}.stage .ph{width:150px;border-radius:26px;padding:6px}.stage .ph img{border-radius:21px}.stage .ph:before{width:44px;height:13px;top:11px}
+ .stage .p2{width:166px;left:calc(50% - 83px)}.stage .p1{left:-2%;top:60px}.stage .p3{left:auto;right:-2%;top:70px}
+ .f1{left:0;top:0;padding:10px 12px;font-size:.78rem}.f1 .ic{width:32px;height:32px}.f2{right:0;top:-8px;font-size:1.4rem;padding:12px 14px}.f3{left:6%;bottom:0;width:230px}.f4{display:none}
+ .vs,.web,.mt,.fq{grid-template-columns:1fr}.fq{gap:10px}
+ .apps,.clock{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -22px;padding:0 22px 16px;gap:14px}
+ .app{flex:0 0 84%;scroll-snap-align:center}.ck{flex:0 0 70%;scroll-snap-align:start}
+ .tl{grid-template-columns:1fr;gap:34px}.tl:before{left:27px;right:auto;top:0;bottom:0;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--p) 0 10px,transparent 10px 18px)}
+ .st{padding:0 0 0 80px}.st .nb{position:absolute;left:0;top:0}.st .wk{margin-top:4px}
+ .ld{padding:50px 24px;border-radius:28px}.cta{padding:50px 24px;border-radius:28px}
+ .ft{grid-template-columns:1fr}.gal .ph{width:200px}
+ .web{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:22px -22px 0;padding:0 22px 16px;gap:14px}.web .bw{flex:0 0 88%;scroll-snap-align:center}
+ .fab{display:none}
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--ln)}
+ .mbar a{display:flex;align-items:center;justify-content:center;gap:7px;height:48px;border-radius:14px;font:600 .92rem Sora;text-decoration:none}
+ .mbar .wa{background:#25D366;color:#06341a}.mbar .cl{background:var(--ink);color:var(--bg)}.mbar .go{background:var(--p);color:#fff}
+}
 </style>
 </head>
 <body>
 <header><div class="w hd">
- <a href="#top" aria-label="YooMart by Yoorie"><img class="lb" src="assets/img/yoomart-logo.svg" alt="YooMart" width="118" height="34"><img class="lw" src="assets/img/yoomart-logo-white.svg" alt="YooMart" width="118" height="34"></a>
- <nav><a class="l" href="#what">What you get</a><a class="l" href="#how">How it works</a><a class="l" href="#packages">Packages</a><a class="l" href="#faq">FAQ</a>
- <button class="tg" id="tg" type="button" aria-label="Switch light/dark theme">◐</button><a class="btn bp hc" href="#lead" style="padding:10px 16px">Get a free consultation</a></nav>
+ <a href="#top" aria-label="YooMart home"><img class="lg lg-l" src="assets/img/yoomart-logo.svg" alt="YooMart" width="120" height="30"><img class="lg lg-d" src="assets/img/yoomart-logo-white.svg" alt="YooMart" width="120" height="30"></a>
+ <nav><a href="#apps">The apps</a><a href="#timeline">Timeline</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+ <button class="tg" id="tg" aria-label="Toggle dark mode">◐</button>
+ <a class="btn bp hc" href="#lead" style="padding:12px 20px">Free consultation</a>
 </div></header>
 
-<main id="top">
-<section class="hero"><div class="w hg">
- <div>
-  <span class="eb">Done-for-you · Your brand</span><span class="eb" style="margin-left:8px;background:var(--p);color:#fff">Starting at ₹29,999</span>
-  <h1>Start Your Own <span>Quick-Commerce</span> Business</h1>
-  <p class="lead">Run a Blinkit / Zepto-style grocery delivery business in your city — under <b>your own name</b>. We build and launch your customer app, store app, delivery app, admin panel and website. You focus on customers; we handle the tech.</p>
-  <ul class="ticks">
-   <li><span>Apps published on Play Store &amp; App Store under <b>your</b> developer account</span></li>
-   <li><span>Admin panel + web storefront set up on hosting, with online payments</span></li>
-   <li><span>Training for you and your team, plus ongoing support</span></li>
-   <li><span><b>Starting at ₹29,999</b>&nbsp;<span style="color:var(--mu)">(+ GST) · <a href="#packages">see packages</a></span></span></li>
-  </ul>
-  <div class="phones" aria-hidden="true">
-   <img src="assets/img/customer-06-home.webp" alt="" width="418" height="872">
-   <img src="assets/img/store-02-dashboard.webp" alt="" width="418" height="872" loading="lazy">
-   <img src="assets/img/rider-03-home.webp" alt="" width="418" height="872" loading="lazy">
+<section class="hero" id="top"><div class="blob"></div><div class="w hg">
+ <div class="hl">
+  <span class="k">Done-for-you quick commerce · India</span>
+  <h1>Your own <em>Blinkit-style</em> app. Your brand. <span class="mark">Live in weeks.</span></h1>
+  <p class="lead">We set up, brand and launch a complete 10-minute delivery business for your store or city — <b>customer app, store app, rider app, admin panel and web store</b>. You run the shop. We handle the tech.</p>
+  <div class="chips"><span class="chip"><i></i>Your name on Play Store</span><span class="chip"><i></i>UPI &amp; online payments</span><span class="chip"><i></i>Hindi + English support</span></div>
+  <div class="price"><b>From ₹29,999</b><span>+ GST · one-time setup · <a href="#pricing">see packages</a></span></div>
+  <div class="stage" aria-hidden="true">
+   <div class="ph p1"><img src="assets/img/store-02-dashboard.webp" alt="" width="418" height="872"></div>
+   <div class="ph p2"><img src="assets/img/customer-06-home.webp" alt="" width="418" height="872" fetchpriority="high"></div>
+   <div class="ph p3"><img src="assets/img/rider-03-home.webp" alt="" width="418" height="872"></div>
+   <div class="fc f1"><span class="ic">🛒</span><span><b>New order received</b><small>Store app · accept in one tap</small></span></div>
+   <div class="fc f2"><small>Delivery in</small>10 min</div>
+   <div class="fc f3"><b>Rider is on the way</b><small>Live tracking in the customer app</small><div class="trk"><i></i></div><small><span class="dot"></span>Picked up · arriving soon</small></div>
+   <div class="fc f4"><b><span class="dot"></span>You're online</b><small>Rider app</small></div>
   </div>
  </div>
-
- <div class="fc" id="lead">
-  <h2>Get a free consultation</h2>
-  <p class="s">Tell us about your business. We'll call or WhatsApp you with a plan and a quote.</p>
-  <form class="f" id="lf" action="lead.php" method="post" novalidate>
-   <label>Your name<input name="name" autocomplete="name" required maxlength="80" placeholder="e.g. Rahul Sharma"></label>
-   <div class="two">
-    <label>Phone / WhatsApp<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required pattern="[0-9+ ()-]{10,16}" placeholder="98765 43210"></label>
-    <label>City<input name="city" autocomplete="address-level2" required maxlength="60" placeholder="e.g. Lucknow"></label>
+ <div class="form" id="lead"><span class="hstrip">Free · no obligation</span>
+  <h3>Get your free launch plan</h3>
+  <p>Tell us about your business. We'll WhatsApp or call you within one working day.</p>
+  <form id="lf" action="lead.php" method="post" novalidate>
+   <div class="fg">
+    <label class="s2">Your name<input name="name" required autocomplete="name" placeholder="e.g. Rahul Sharma"></label>
+    <label>Phone / WhatsApp<input name="phone" required type="tel" inputmode="tel" autocomplete="tel" placeholder="98765 43210"></label>
+    <label>City<input name="city" required autocomplete="address-level2" placeholder="e.g. Lucknow"></label>
+    <label>Business type<select name="business" required><option value="">Select…</option><option>Kirana / grocery store</option><option>Supermarket / chain</option><option>New quick-commerce startup</option><option>Dark store / warehouse</option><option>Pharmacy / other retail</option><option>Other</option></select></label>
+    <label>Package / budget<select name="budget" required><option value="">Select…</option><option>Starter · ₹29,999</option><option>Business · ₹69,999</option><option>Premium · ₹1,29,999</option><option>Custom / larger project</option><option>Not sure yet</option></select></label>
+    <label class="s2">Message <small style="font-weight:400;color:var(--mu)">(optional)</small><textarea name="message" placeholder="Number of stores, launch date, anything else…"></textarea></label>
    </div>
-   <div class="two">
-    <label>Business type<select name="business" required>
-     <option value="">Select…</option><option>Kirana / grocery store</option><option>Supermarket / chain</option><option>New quick-commerce startup</option><option>Dark store / warehouse</option><option>Pharmacy / other retail</option><option>Other</option></select></label>
-    <label>Package / budget<select name="budget" required>
-     <option value="">Select…</option><option>Starter · ₹29,999</option><option>Business · ₹69,999</option><option>Premium · ₹1,29,999</option><option>Custom / larger project</option><option>Not sure yet</option></select></label>
-   </div>
-   <label>Message <span style="font-weight:400;color:var(--mu)">(optional)</span><textarea name="message" maxlength="1000" placeholder="Number of stores, launch date, anything else…"></textarea></label>
-   <div class="hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+   <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
    <input type="hidden" name="src" id="src">
-   <p class="err" id="er" role="alert"></p>
-   <button class="btn bp" type="submit" id="sb">Get my free plan →</button>
-   <p class="fine">No spam. We'll only contact you about your enquiry.</p>
+   <button class="btn bp" id="sb" type="submit">Get my free plan →</button>
+   <div id="er" role="alert"></div>
+   <p class="fine">No spam. We only contact you about your enquiry.</p>
   </form>
-  <div class="ty" role="status" aria-live="polite">
-   <div class="big">✓</div><h2>Thank you!</h2>
-   <p class="lead" style="margin:0 auto 18px">We've received your details and will contact you shortly on WhatsApp or phone.</p>
-   <a class="btn bp" href="https://wa.me/919258683686?text=Hi%20Yoorie%2C%20I%20just%20sent%20an%20enquiry%20about%20starting%20my%20quick-commerce%20business." target="_blank" rel="noopener">Chat on WhatsApp now</a>
-   <p class="fine" style="margin-top:14px">Meanwhile, try the <a href="https://yoomart.yoorie.com/preview" target="_blank" rel="noopener">live demo</a>.</p>
-  </div>
+  <div class="ty"><div class="tk">✓</div><h3>Thank you! We've got your details.</h3><p style="color:var(--mu);margin:10px 0 20px">We'll reach you on WhatsApp or phone within one working day. Want to talk now?</p><a class="btn bl" href="https://wa.me/919258683686?text=Hi%2C%20I%20just%20sent%20an%20enquiry%20for%20YooMart" data-ev="whatsapp">WhatsApp us now</a></div>
  </div>
 </div></section>
 
-<section class="alt" id="why"><div class="w c">
- <span class="eb">The problem → the solution</span>
- <h2>Your customers want 10-minute delivery. Building it alone is hard.</h2>
- <p class="lead">Quick-commerce apps are changing how India buys groceries. Local stores are losing orders — but building apps, a rider system and payments from scratch takes months and a full tech team.</p>
- <div class="ps" style="text-align:left">
-  <div class="cd"><h3>😓 Doing it yourself</h3><ul><li>Hiring developers for 3 apps, an admin panel and a website</li><li>Months of building and testing before the first order</li><li>Play Store / App Store accounts, reviews and rejections</li><li>Payment gateway, SMS, notifications and server setup</li><li>No one to call when something breaks</li></ul></div>
-  <div class="cd yes"><h3>🚀 With Yoorie</h3><ul><li>A ready, proven platform customised with your brand</li><li>We handle store listings, publishing and approvals</li><li>Payments, notifications and hosting configured for you</li><li>Your team trained on the admin, store and rider apps</li><li>Support after launch from the people who built it</li></ul></div>
+<div class="mq" aria-hidden="true"><div><span>Customer app</span><span>Store app</span><span>Rider app</span><span>Admin panel</span><span>Web storefront</span><span>Your brand</span><span>Your Play Store account</span><span>UPI payments</span><span>Customer app</span><span>Store app</span><span>Rider app</span><span>Admin panel</span><span>Web storefront</span><span>Your brand</span><span>Your Play Store account</span><span>UPI payments</span></div></div>
+
+<section class="sec"><div class="w">
+ <div class="sh rv"><span class="k">The honest maths</span><h2>Customers now expect 10-minute delivery. Building it yourself is the hard way.</h2></div>
+ <div class="vs">
+  <div class="vc rv"><span class="tag">Build from scratch</span><div class="big">Months. Lakhs.</div><p>Hire developers, design three apps, build an admin, then fix it all before launch.</p>
+   <ul><li>Separate developers for Android, iOS, backend and web</li><li>Months before your first real order</li><li>Developer salaries or agency bills in lakhs</li><li>You manage the tech, hosting and app-store rejections</li></ul></div>
+  <div class="vc y rv"><span class="tag">YooMart, done for you</span><div class="big">Weeks. From ₹29,999.</div><p>A proven, ready platform set up under your brand, by people who've done it before.</p>
+   <ul><li>Customer, store and rider apps plus admin and web store</li><li>Branded with your name, logo and colours</li><li>Hosting, domain, payment gateway and Firebase set up for you</li><li>Training for your team, and support after launch</li></ul></div>
+ </div>
+ <p class="vfine rv">"Months" and "lakhs" describe a typical from-scratch build of three apps plus an admin and website; your quote will depend on scope. Third-party costs (domain, hosting, store fees, SMS, gateway) are extra either way.</p>
+</div></section>
+
+<section class="sec" id="apps" style="background:var(--bg2);border-block:1px solid var(--ln)"><div class="w">
+ <div class="sh rv"><span class="k">What you get</span><h2>Three apps. One admin. All under your name.</h2><p>Every screen below is the real product, not a mock-up.</p></div>
+ <div class="apps">
+  <div class="app rv"><span class="n">01 · For your customers</span><h3>Customer app</h3><p>Browse, add to cart, pay by UPI or card, and track the rider live.</p><ul><li>Categories &amp; search</li><li>Offers &amp; coupons</li><li>Live tracking</li><li>Wallet</li></ul><div class="ph"><img src="assets/img/customer-09-product.webp" alt="Customer app product screen" width="418" height="872" loading="lazy"></div></div>
+  <div class="app rv"><span class="n">02 · For your shop</span><h3>Store app</h3><p>Accept orders, update stock and prices, and see each day's sales at a glance.</p><ul><li>Order queue</li><li>Stock on/off</li><li>Opening hours</li><li>Sales view</li></ul><div class="ph"><img src="assets/img/store-03-orders-queue.webp" alt="Store app order queue" width="418" height="872" loading="lazy"></div></div>
+  <div class="app rv"><span class="n">03 · For your riders</span><h3>Rider app</h3><p>Go online, pick up, navigate, deliver and see earnings — on any Android phone.</p><ul><li>Online toggle</li><li>Pickup &amp; drop</li><li>Navigation</li><li>Earnings</li></ul><div class="ph"><img src="assets/img/rider-09-earnings.webp" alt="Rider app earnings" width="418" height="872" loading="lazy"></div></div>
+ </div>
+ <div class="web">
+  <div class="bw rv"><div class="bar"><i></i><i></i><i></i><span>admin.yourbrand.in</span></div><div class="sc"><img class="th" src="assets/img/admin-dashboard-desktop-light.webp" data-l="assets/img/admin-dashboard-desktop-light.webp" data-d="assets/img/admin-dashboard-desktop-dark.webp" alt="Admin dashboard" width="1440" height="900" loading="lazy"></div><div class="wcap">Admin panel<small>Stores, riders, products, payouts</small></div></div>
+  <div class="bw rv"><div class="bar"><i></i><i></i><i></i><span>yourbrand.in</span></div><div class="sc"><img class="th" src="assets/img/storefront-home-desktop-light.webp" data-l="assets/img/storefront-home-desktop-light.webp" data-d="assets/img/storefront-home-desktop-dark.webp" alt="Web storefront" width="1440" height="900" loading="lazy"></div><div class="wcap">Web storefront<small>Orders from any browser</small></div></div>
  </div>
 </div></section>
 
-<section id="what"><div class="w c">
- <span class="eb">What you get</span>
- <h2>A complete quick-commerce system, in your brand</h2>
- <p class="lead">Five connected parts that run your business end to end.</p>
- <div class="get">
-  <div class="cd"><img class="i" src="assets/img/icon-customer.svg" alt="" loading="lazy"><h3>Customer app</h3><p>Android &amp; iOS. Browse, cart, pay, track live.</p></div>
-  <div class="cd"><img class="i" src="assets/img/icon-store.svg" alt="" loading="lazy"><h3>Store app</h3><p>Accept orders, pack, manage stock.</p></div>
-  <div class="cd"><img class="i" src="assets/img/icon-rider.svg" alt="" loading="lazy"><h3>Delivery app</h3><p>Riders get orders, navigate, collect cash, see earnings.</p></div>
-  <div class="cd"><div class="ic" style="margin:0 auto 12px">📊</div><h3>Admin panel</h3><p>Products, stores, riders, offers, reports, settings.</p></div>
-  <div class="cd"><div class="ic" style="margin:0 auto 12px">🌐</div><h3>Web storefront</h3><p>Customers can order from a browser too.</p></div>
+<section class="sec" id="timeline"><div class="w">
+ <div class="sh rv"><span class="k">How it works</span><h2>From first call to first order.</h2><p>Four clear stages. You always know what's next and what we need from you.</p></div>
+ <div class="tl">
+  <div class="st rv"><div class="nb">1</div><div class="wk">Stage one</div><h3>Consult</h3><p>A free call to understand your store, city and goals.</p><ul><li>Pick the right package</li><li>Fixed quote, in writing</li></ul></div>
+  <div class="st rv"><div class="nb">2</div><div class="wk">Stage two</div><h3>Branding</h3><p>Your name, logo, colours and splash screen across every app.</p><ul><li>You approve the look</li><li>App-store listing text</li></ul></div>
+  <div class="st rv"><div class="nb">3</div><div class="wk">Stage three</div><h3>Setup</h3><p>Hosting, domain, payments, notifications and your store data.</p><ul><li>Gateway &amp; Firebase</li><li>Products &amp; delivery zones</li></ul></div>
+  <div class="st rv"><div class="nb">4</div><div class="wk">Stage four</div><h3>Launch</h3><p>Apps go live, your team is trained, and we stay on for support.</p><ul><li>Play Store / App Store</li><li>Staff training</li></ul></div>
  </div>
+ <p class="tlnote rv">Most setups take a few weeks. The exact timeline depends on your package, how quickly branding is approved, and app-store review times.</p>
 </div></section>
 
-<section class="alt" id="how"><div class="w c">
- <span class="eb">How it works</span>
- <h2>From idea to launch in four steps</h2>
- <div class="steps" style="text-align:left">
-  <div class="cd"><h3>Consult</h3><p>We understand your city, stores, delivery area and goals, and suggest the right package.</p></div>
-  <div class="cd"><h3>Branding</h3><p>Your name, logo, colours and app icons applied across all apps and the website.</p></div>
-  <div class="cd"><h3>Setup</h3><p>Hosting, admin, payment gateway, Firebase notifications, SMS/OTP and your catalogue.</p></div>
-  <div class="cd"><h3>Launch</h3><p>Apps published under your accounts, team training, and support as you grow.</p></div>
+<section class="sec" style="padding-top:0"><div class="w"><div class="ld">
+ <div class="sh rv"><span class="k">Launch day</span><h2>What your first day looks like.</h2><p>This is how the apps work together once you're live.</p></div>
+ <div class="clock">
+  <div class="ck rv"><div class="t">08:00</div><h3>Shop opens</h3><p>Toggle "Accepting orders" in the store app. Riders go online.</p></div>
+  <div class="ck rv"><div class="t">08:12</div><h3>First order</h3><p>A neighbour orders milk and bread from your app and pays by UPI.</p></div>
+  <div class="ck rv"><div class="t">08:14</div><h3>Packed</h3><p>Your staff accepts it in the store app and packs the bag.</p></div>
+  <div class="ck rv"><div class="t">08:16</div><h3>On the way</h3><p>A rider picks it up. The customer watches them on the map.</p></div>
+  <div class="ck rv"><div class="t">21:00</div><h3>Day closed</h3><p>Check orders, sales and rider payouts in the admin panel.</p></div>
  </div>
-</div></section>
-
-<section id="demo"><div class="w c">
- <span class="eb">See it live</span>
- <h2>Real screens from the platform</h2>
- <p class="lead">This is what your customers, store staff and riders will use — with your brand on it.</p>
- <div class="gal" tabindex="0" aria-label="App screenshots">
-  <figure><img src="assets/img/customer-06-home.webp" alt="Customer app home" width="418" height="872" loading="lazy"><figcaption>Customer · Home</figcaption></figure>
-  <figure><img src="assets/img/customer-09-product.webp" alt="Customer app product page" width="418" height="872" loading="lazy"><figcaption>Customer · Product</figcaption></figure>
-  <figure><img src="assets/img/customer-10-cart.webp" alt="Customer app cart" width="418" height="872" loading="lazy"><figcaption>Customer · Cart</figcaption></figure>
-  <figure><img src="assets/img/customer-13-tracking.webp" alt="Live order tracking" width="418" height="872" loading="lazy"><figcaption>Customer · Live tracking</figcaption></figure>
-  <figure><img src="assets/img/store-03-orders-queue.webp" alt="Store app order queue" width="418" height="872" loading="lazy"><figcaption>Store · Orders</figcaption></figure>
-  <figure><img src="assets/img/rider-09-earnings.webp" alt="Delivery app earnings" width="418" height="872" loading="lazy"><figcaption>Rider · Earnings</figcaption></figure>
- </div>
- <div class="wide">
-  <picture><source srcset="assets/img/admin-dashboard-desktop-dark.webp" media="(prefers-color-scheme: dark)"><img class="th" data-l="assets/img/admin-dashboard-desktop-light.webp" data-d="assets/img/admin-dashboard-desktop-dark.webp" src="assets/img/admin-dashboard-desktop-light.webp" alt="Admin dashboard" width="1440" height="900" loading="lazy"></picture>
-  <picture><img class="th" data-l="assets/img/storefront-home-desktop-light.webp" data-d="assets/img/storefront-home-desktop-dark.webp" src="assets/img/storefront-home-desktop-light.webp" alt="Web storefront" width="1440" height="900" loading="lazy"></picture>
- </div>
- <div class="dm"><a class="btn bp" href="https://yoomart.yoorie.com/preview" target="_blank" rel="noopener">Open the live demo ↗</a><a class="btn bo" href="#lead">Book a guided demo</a></div>
-</div></section>
-
-<section class="alt" id="features"><div class="w c">
- <span class="eb">Features</span>
- <h2>Everything a modern delivery business needs</h2>
- <div class="ft" style="text-align:left">
-  <div><span class="ic">⚡</span><p><b>Fast checkout</b><span>Cart, coupons, saved addresses and repeat orders.</span></p></div>
-  <div><span class="ic">💳</span><p><b>Online payments</b><span>Razorpay (cards, UPI, wallets), cash on delivery and in-app wallet.</span></p></div>
-  <div><span class="ic">📍</span><p><b>Live order tracking</b><span>Customers follow the rider on a map.</span></p></div>
-  <div><span class="ic">🏪</span><p><b>Multi-store</b><span>Run one store or many, each with its own delivery area and stock.</span></p></div>
-  <div><span class="ic">🛵</span><p><b>Rider management</b><span>Auto assignment, shifts, cash collection and earnings.</span></p></div>
-  <div><span class="ic">🔔</span><p><b>Push notifications</b><span>Firebase alerts for order updates and promotions.</span></p></div>
-  <div><span class="ic">🏷️</span><p><b>Offers &amp; flash sales</b><span>Coupons, festival sales, membership pass and referrals.</span></p></div>
-  <div><span class="ic">📦</span><p><b>Inventory</b><span>Stock levels, low-stock alerts and bulk product import.</span></p></div>
-  <div><span class="ic">📈</span><p><b>Reports</b><span>Sales, orders, stores and riders at a glance.</span></p></div>
-  <div><span class="ic">📱</span><p><b>OTP login</b><span>Simple phone-number sign-in for customers.</span></p></div>
-  <div><span class="ic">🌙</span><p><b>Light &amp; dark mode</b><span>Polished apps that look great day and night.</span></p></div>
-  <div><span class="ic">🎨</span><p><b>100% your brand</b><span>Your name, logo, colours and store listings.</span></p></div>
- </div>
-</div></section>
-
-<section id="packages"><div class="w c">
- <span class="eb">Packages</span>
- <h2>Choose how far you want us to go</h2>
- <p class="lead">Clear one-time pricing. Not sure which fits? We will recommend one on a free call.</p>
- <div class="pk" style="text-align:left">
-  <div class="cd"><h3>Starter</h3><p>Go online fast on the web + Android.</p><p class="q">₹29,999<small>one-time · + GST</small></p>
-   <ul><li>Branded web storefront</li><li>Admin, store &amp; delivery web panels</li><li>Hosting, domain, payment gateway &amp; Firebase setup</li><li>Android customer app (APK)</li><li>1 month support</li></ul><a class="btn bo" href="#lead" data-pk="Starter">Choose Starter</a></div>
-  <div class="cd hot"><h3>Business</h3><p>Your brand on the Play Store.</p><p class="q">₹69,999<small>one-time · + GST</small></p>
-   <ul><li>Everything in Starter</li><li>All 3 apps published on Play Store under your account</li><li>Custom colours &amp; splash screen</li><li>Product upload help</li><li>Staff training</li><li>3 months support</li></ul><a class="btn bp" href="#lead" data-pk="Business">Choose Business</a></div>
-  <div class="cd"><h3>Premium</h3><p>Android + iOS, fully launched.</p><p class="q">₹1,29,999<small>one-time · + GST</small></p>
-   <ul><li>Everything in Business</li><li>iOS apps on the App Store</li><li>Small custom features</li><li>SEO / ASO basics</li><li>6 months priority support</li></ul><a class="btn bo" href="#lead" data-pk="Premium">Choose Premium</a></div>
- </div>
- <div class="cd" style="margin-top:20px;text-align:left;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap"><div><h3 style="margin:0">Maintenance plan <span style="font-weight:500;color:var(--mu)">(optional)</span></h3><p>Updates, monitoring, fixes and help after your support period ends.</p></div><p class="q" style="margin:0;font-size:1.3rem;font-weight:800">from ₹4,999<small style="font-size:.85rem;font-weight:500;color:var(--mu)"> /month + GST</small></p></div>
- <p class="fine" style="max-width:820px;margin:18px auto 0;font-size:.85rem">Prices exclude GST. Third-party costs are paid by you directly: domain, hosting/VPS, Google Play developer account (US$25 one-time), Apple Developer Program (US$99/year), SMS/OTP charges and payment-gateway fees.</p>
-</div></section>
-
-<section class="alt" id="faq"><div class="w">
- <div class="c"><span class="eb">FAQ</span><h2>Questions, answered</h2></div>
- <div class="faq">
-  <details><summary>Will the apps be in my company's name?</summary><p>Yes. The apps are published on Google Play and the App Store under your own developer accounts, with your brand name, logo and colours. We guide you through creating the accounts.</p></details>
-  <details><summary>Do I need any technical knowledge?</summary><p>No. We set everything up and train you and your team. Day to day you only use the admin panel and the store app, which are designed for non-technical users.</p></details>
-  <details><summary>How long does it take to launch?</summary><p>It depends on the package, your branding and app store review times. We'll give you a clear timeline during the consultation.</p></details>
-  <details><summary>Which payment methods are supported?</summary><p>Razorpay for cards, UPI and wallets, plus cash on delivery and an in-app wallet. We help you connect your own Razorpay account so money goes straight to you.</p></details>
-  <details><summary>What do I need to provide?</summary><p>Your business name and logo, Play Store / Apple developer accounts, a Razorpay account, a domain if you have one, and your product list. We help with anything missing.</p></details>
-  <details><summary>Can I use it for one kirana store?</summary><p>Yes. Start with one store and add more stores, delivery zones and riders as you grow.</p></details>
-  <details><summary>What happens after launch?</summary><p>Each package includes support (1, 3 or 6 months). After that you can add the optional maintenance plan from ₹4,999/month for updates, fixes and help.</p></details>
-  <details><summary>Are there any other costs?</summary><p>Prices exclude GST. Third-party costs are paid by you directly: domain, hosting/VPS, Google Play account (US$25 one-time), Apple Developer Program (US$99/year, Premium only), SMS/OTP and payment-gateway fees.</p></details>
-  <details><summary>Can I see it before deciding?</summary><p>Yes — try the <a href="https://yoomart.yoorie.com/preview" target="_blank" rel="noopener">live demo</a>, or ask for a guided walkthrough on a call.</p></details>
- </div>
-</div></section>
-
-<section><div class="w"><div class="cta">
- <h2>Ready to launch your own delivery brand?</h2>
- <p class="lead">Get a free consultation and a custom quote. No obligation.</p>
- <div class="dm" style="margin-top:0"><a class="btn" href="#lead">Get my free plan</a><a class="btn bo" href="https://wa.me/919258683686?text=Hi%20Yoorie%2C%20I%27d%20like%20to%20start%20my%20own%20quick-commerce%20business." target="_blank" rel="noopener">WhatsApp us</a></div>
 </div></div></section>
-</main>
 
-<footer><div class="w">
- <div><b style="color:var(--tx)">Yoorie</b> · Done-for-you quick-commerce setup with YooMart</div>
- <div><a href="tel:+919258683686">+91 92586 83686</a> · <a href="mailto:support@yoorie.com">support@yoorie.com</a> · <a href="https://yoorie.com/">yoorie.com</a></div>
-</div></footer>
+<section class="sec" id="demo" style="padding-top:0"><div class="w">
+ <div class="galh"><div class="sh rv" style="margin-bottom:30px"><span class="k">Real screens</span><h2>See the product.</h2><p>Swipe through the real apps, or try the live demo yourself.</p></div>
+  <div class="demo rv" style="margin-bottom:30px"><a class="btn bp" href="https://yoomart.yoorie.com/preview" target="_blank" rel="noopener">Open live demo ↗</a></div></div>
+ <div class="gal">
+  <figure><div class="ph"><img src="assets/img/customer-06-home.webp" alt="Customer home" width="418" height="872" loading="lazy"></div><figcaption>Customer · Home<small>Delivery time and address up top</small></figcaption></figure>
+  <figure><div class="ph"><img src="assets/img/customer-09-product.webp" alt="Product" width="418" height="872" loading="lazy"></div><figcaption>Customer · Product<small>Details, price, add to cart</small></figcaption></figure>
+  <figure><div class="ph"><img src="assets/img/customer-10-cart.webp" alt="Cart" width="418" height="872" loading="lazy"></div><figcaption>Customer · Cart<small>Coupons and checkout</small></figcaption></figure>
+  <figure><div class="ph"><img src="assets/img/customer-13-tracking.webp" alt="Tracking" width="418" height="872" loading="lazy"></div><figcaption>Customer · Tracking<small>Live rider location</small></figcaption></figure>
+  <figure><div class="ph"><img src="assets/img/store-02-dashboard.webp" alt="Store dashboard" width="418" height="872" loading="lazy"></div><figcaption>Store · Dashboard<small>Open or close in one tap</small></figcaption></figure>
+  <figure><div class="ph"><img src="assets/img/store-03-orders-queue.webp" alt="Orders queue" width="418" height="872" loading="lazy"></div><figcaption>Store · Orders<small>Accept and pack</small></figcaption></figure>
+  <figure><div class="ph"><img src="assets/img/rider-03-home.webp" alt="Rider home" width="418" height="872" loading="lazy"></div><figcaption>Rider · Home<small>Go online for orders</small></figcaption></figure>
+  <figure><div class="ph"><img src="assets/img/rider-09-earnings.webp" alt="Rider earnings" width="418" height="872" loading="lazy"></div><figcaption>Rider · Earnings<small>Daily and weekly view</small></figcaption></figure>
+ </div>
+</div></section>
 
-<div class="stk">
- <a class="wa" href="https://wa.me/919258683686?text=Hi%20Yoorie%2C%20I%27d%20like%20to%20start%20my%20own%20quick-commerce%20business." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-ev="whatsapp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
- <a class="cl" href="tel:+919258683686" aria-label="Call +91 92586 83686" data-ev="call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
-</div>
-<nav class="mb" aria-label="Quick contact">
- <a class="wa" href="https://wa.me/919258683686?text=Hi%20Yoorie%2C%20I%27d%20like%20to%20start%20my%20own%20quick-commerce%20business." target="_blank" rel="noopener" data-ev="whatsapp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a>
- <a class="cl" href="tel:+919258683686" data-ev="call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call</a>
- <a class="q" href="#lead">Get free plan</a>
-</nav>
+<section class="sec" style="background:var(--bg2);border-block:1px solid var(--ln)"><div class="w">
+ <div class="sh rv"><span class="k">Inside the platform</span><h2>Everything a delivery business needs on day one.</h2></div>
+ <div class="ft rv">
+  <div><b>UPI, cards &amp; COD</b><span>Online payments through your own gateway account.</span></div>
+  <div><b>Live rider tracking</b><span>Customers see the rider on the map.</span></div>
+  <div><b>Delivery zones</b><span>Set the areas and fees you serve.</span></div>
+  <div><b>Coupons &amp; offers</b><span>Run discounts and promotions.</span></div>
+  <div><b>Push notifications</b><span>Order updates and campaigns.</span></div>
+  <div><b>Multi-store ready</b><span>Add more stores as you grow.</span></div>
+  <div><b>Stock control</b><span>Switch items on or off instantly.</span></div>
+  <div><b>Rider payouts</b><span>Track earnings per rider.</span></div>
+  <div><b>Wallet</b><span>Customer wallet and refunds.</span></div>
+  <div><b>Light &amp; dark mode</b><span>Across the apps and panels.</span></div>
+  <div><b>Web storefront</b><span>Orders from any browser too.</span></div>
+  <div><b>Your data, your accounts</b><span>Apps and servers under your name.</span></div>
+ </div>
+</div></section>
 
+<section class="sec" id="pricing"><div class="w">
+ <div class="sh rv"><span class="k">Packages</span><h2>One-time setup. No commission on your orders.</h2><p>Pick the launch that fits you. Prices exclude GST.</p></div>
+ <div class="pr">
+  <div class="pc rv"><span class="nm">Starter</span><div class="am"><sup>₹</sup>29,999</div><span class="gst">+ GST · one-time</span><p class="for">Get online fast with your own branded web store and Android app.</p>
+   <ul><li>Branded web storefront</li><li>Admin, store &amp; delivery web panels</li><li>Hosting, domain, gateway &amp; Firebase setup</li><li>Android customer app (APK)</li><li>1 month support</li></ul>
+   <a class="btn bo" href="#lead" data-pk="Starter">Choose Starter</a></div>
+  <div class="pc hot rv"><span class="rib">Most chosen</span><span class="nm">Business</span><div class="am"><sup>₹</sup>69,999</div><span class="gst">+ GST · one-time</span><p class="for">The full quick-commerce launch, live on Google Play under your name.</p>
+   <ul><li>Everything in Starter</li><li>All 3 apps on Play Store, your account</li><li>Custom colours &amp; splash screen</li><li>Help uploading your products</li><li>Staff training</li><li>3 months support</li></ul>
+   <a class="btn bl" href="#lead" data-pk="Business">Choose Business</a></div>
+  <div class="pc rv"><span class="nm">Premium</span><div class="am"><sup>₹</sup>1,29,999</div><span class="gst">+ GST · one-time</span><p class="for">Android and iPhone, with extra polish and priority help.</p>
+   <ul><li>Everything in Business</li><li>iOS apps on the App Store</li><li>Small custom features</li><li>SEO / ASO basics</li><li>6 months priority support</li></ul>
+   <a class="btn bo" href="#lead" data-pk="Premium">Choose Premium</a></div>
+ </div>
+ <div class="mt">
+  <div class="rv"><h3>Maintenance plan</h3><div class="am2">from ₹4,999<small style="font:400 .9rem Inter;color:var(--mu)">/month</small></div><p>Updates, monitoring, small changes and help after your included support ends. Optional.</p></div>
+  <div class="rv"><h3>Paid by you, directly</h3><ul><li>Domain and hosting / VPS</li><li>Google Play: $25 one-time</li><li>Apple Developer: $99 / year (Premium)</li><li>SMS / OTP and payment-gateway fees</li></ul></div>
+ </div>
+</div></section>
+
+<section class="sec" id="faq" style="padding-top:0"><div class="w fq">
+ <div class="rv"><span class="k">FAQ</span><h2 style="margin-top:14px">Questions, answered.</h2><p style="color:var(--mu);margin-top:16px">Something else? <a href="https://wa.me/919258683686" data-ev="whatsapp">WhatsApp us</a> or email <a href="mailto:support@yoorie.com">support@yoorie.com</a>.</p></div>
+ <div class="rv">
+  <details open><summary>Will the apps be under my brand and my account?</summary><p>Yes. The apps carry your name, logo and colours, and on Business and Premium they're published on your own Google Play (and Apple) developer account.</p></details>
+  <details><summary>Do I need any technical knowledge?</summary><p>No. We do the setup, and train you and your staff to run orders, products and riders from simple apps and the admin panel.</p></details>
+  <details><summary>How long does it take to launch?</summary><p>Usually a few weeks. It depends on the package, how quickly you approve branding and send product data, and app-store review times.</p></details>
+  <details><summary>Are there any other costs?</summary><p>Yes, third-party costs are paid directly by you: domain, hosting/VPS, Google Play ($25 one-time), Apple Developer ($99/year, for iOS), SMS/OTP and payment-gateway fees. Package prices exclude GST.</p></details>
+  <details><summary>Do you take a commission on my orders?</summary><p>No. You pay a one-time setup fee and, if you want it, an optional monthly maintenance plan.</p></details>
+  <details><summary>Can I see it working before I decide?</summary><p>Yes. Try the <a href="https://yoomart.yoorie.com/preview" target="_blank" rel="noopener">live demo</a>, or ask for a walkthrough on the free call.</p></details>
+  <details><summary>Can it work for more than one store?</summary><p>Yes. The platform supports multiple stores, so you can start with one and add more later.</p></details>
+ </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="w"><div class="cta rv">
+ <div><span class="k" style="color:var(--lime)">Your move</span><h2 style="margin-top:16px">Your shop. Your app. <span>Your city.</span></h2><p style="margin-top:18px;font-size:1.1rem;max-width:520px">Get a free launch plan with a fixed quote. No obligation.</p></div>
+ <div class="acts"><a class="btn bl" href="#lead">Get my free plan →</a><a class="btn bo" href="https://wa.me/919258683686?text=Hi%2C%20I%27m%20interested%20in%20YooMart" data-ev="whatsapp">WhatsApp +91 92586 83686</a><a class="btn bo" href="tel:+919258683686" data-ev="call">Call us</a></div>
+</div></div></section>
+
+<footer><div class="w fo"><div><img class="lg-l" src="assets/img/yoomart-logo.svg" alt="YooMart" height="26" width="104" style="height:26px;width:auto"><img class="lg-d" src="assets/img/yoomart-logo-white.svg" alt="YooMart" height="26" width="104" style="height:26px;width:auto"><p style="margin-top:10px">A done-for-you service by Yoorie · <a href="mailto:support@yoorie.com">support@yoorie.com</a> · <a href="tel:+919258683686">+91 92586 83686</a></p></div><p>© 2026 Yoorie. Blinkit is a trademark of its owner, mentioned only for comparison.</p></div></footer>
+
+<div class="fab"><a class="wa" href="https://wa.me/919258683686?text=Hi%2C%20I%27m%20interested%20in%20YooMart" aria-label="WhatsApp" data-ev="whatsapp"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.9-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.3z"/></svg></a><a class="cl" href="tel:+919258683686" aria-label="Call" data-ev="call"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a></div>
+<div class="mbar"><a class="wa" href="https://wa.me/919258683686?text=Hi%2C%20I%27m%20interested%20in%20YooMart" data-ev="whatsapp">WhatsApp</a><a class="cl" href="tel:+919258683686" data-ev="call">Call</a><a class="go" href="#lead">Free plan →</a></div>
 <script>
 (function(){
  var d=document.documentElement;
@@ -310,6 +429,8 @@ footer{padding:36px 0 30px;color:var(--mu);font-size:.9rem;border-top:1px solid 
    else{er.textContent=(x.j&&x.j.error)||'Something went wrong. Please WhatsApp us instead.';er.style.display='block'}
   }).catch(function(){er.textContent='Network problem. Please try again or WhatsApp us on +91 92586 83686.';er.style.display='block'}).finally(function(){sb.disabled=false;sb.textContent='Get my free plan →'});
  });
+ var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'}):null;
+ document.querySelectorAll('.rv').forEach(function(el,i){if(io)io.observe(el);else el.classList.add('in')});
 })();
 </script>
 </body>
