@@ -5,8 +5,6 @@ RedirectMatch 404 /\.git
 RewriteEngine On
 RewriteOptions Inherit
 RewriteRule (^|/)\.git - [F,L]
-RewriteCond %{REQUEST_URI} ^/lp/yoomart$
-RewriteRule ^ /lp/yoomart/index.html [L]
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
